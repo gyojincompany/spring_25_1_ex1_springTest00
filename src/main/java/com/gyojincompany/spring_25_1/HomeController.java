@@ -1,5 +1,6 @@
 package com.gyojincompany.spring_25_1;
 
+import java.lang.annotation.Repeatable;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -40,6 +41,18 @@ public class HomeController {
 	public String login( ) {
 		
 		return "login";
+	}
+	
+	@RequestMapping("/admin.html")
+	public String admin() {
+		
+		return "admin";
+	}
+	
+	@RequestMapping("/loginForm.html")
+	public String loginForm() {
+		
+		return "loginForm";
 	}
 	
 	
